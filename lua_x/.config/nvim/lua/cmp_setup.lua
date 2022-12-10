@@ -86,6 +86,10 @@ require'lspconfig'.bashls.setup {
    capabilities = capabilities
 }
 
+require'lspconfig'.marksman.setup {
+  capabilities = capabilities
+}
+
 require'lspconfig'.emmet_ls.setup({
     -- on_attach = on_attach,
     capabilities = capabilities,
