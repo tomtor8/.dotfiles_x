@@ -28,7 +28,7 @@ source ~/.config/zsh/zsh-z.plugin.zsh
 # zsh-autosuggestions plugin, cloned from github
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export PATH="/home/tomas/Applications:$PATH"
+export PATH="/home/tom/.local/bin:$PATH"
 
 source ~/.zshrc_aliases
 
