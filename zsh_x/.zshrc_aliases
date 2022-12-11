@@ -28,3 +28,8 @@ alias bukus="buku --deep"
 alias bukut="buku -t"
 alias baktobuku="cat /media/tomas/LILS/macOs_dotfiles_GIT/buku_c/.local/share/buku/bookmarks.db > ~/.local/share/buku/bookmarks.db"
 alias bukutobak="cat ~/.local/share/buku/bookmarks.db > /media/tomas/LILS/macOs_dotfiles_GIT/buku_c/.local/share/buku/bookmarks.db"
+
+# ncdu
+# there are two color options, dark or off
+alias ncdu="ncdu --color dark"
+
