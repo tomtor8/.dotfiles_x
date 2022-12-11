@@ -78,9 +78,9 @@ require'lspconfig'.pyright.setup {
   capabilities = capabilities
 }
 
--- require'lspconfig'.sumneko_lua.setup {
-  -- capabilities = capabilities
--- }
+require'lspconfig'.sumneko_lua.setup {
+  capabilities = capabilities
+}
 
 require'lspconfig'.tsserver.setup {
   capabilities = capabilities,
