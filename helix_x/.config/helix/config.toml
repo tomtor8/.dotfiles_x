@@ -1,0 +1,49 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+mouse = true
+scrolloff = 10
+cursorline = true
+completion-trigger-len = 3
+gutters = ["diagnostics", "diff", "line-numbers"]
+auto-completion = true
+auto-format = true
+bufferline = "multiple"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+# separator = "⋄"
+center = ["file-name"]
+right = ["diagnostics", "position", "position-percentage"]
+mode.normal = "☯"
+mode.insert = "⛏"
+mode.select = "✀"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+
+[editor.search]
+smart-case = true
+
+[editor.indent-guides]
+render = true
+character = "⸽"
+skip-levels = 1
+
+# KEY REMAPPING
+[keys.normal]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "move_line_up"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "move_line_down"]
+C-s = ":w"
+
+[keys.insert]
+j = { k = "normal_mode" } # maps jk to exit insert mode
