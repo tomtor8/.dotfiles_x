@@ -1,31 +1,32 @@
 theme = "onedark"
 
 [editor]
-line-number = "relative"
-mouse = true
-scrolloff = 10
-cursorline = true
-completion-trigger-len = 3
-gutters = ["diagnostics", "diff", "line-numbers"]
 auto-completion = true
 auto-format = true
 bufferline = "multiple"
+color-modes = true
+completion-trigger-len = 2
+cursorline = true
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+line-number = "relative"
+mouse = true
+scrolloff = 15
 
 [editor.statusline]
 left = ["mode", "spinner"]
-# separator = "⋄"
 center = ["file-name"]
-right = ["diagnostics", "position", "position-percentage"]
-mode.normal = "☯"
-mode.insert = "⛏"
-mode.select = "✀"
+right = ["diagnostics", "spacer", "position", "spacer", "position-percentage"]
+separator = "⋄"
+mode.normal = "☯ "
+mode.insert = "🖌 "
+mode.select = "✀ "
 
 [editor.lsp]
 display-messages = true
 
 [editor.cursor-shape]
-insert = "bar"
 normal = "block"
+insert = "bar"
 select = "underline"
 
 [editor.file-picker]
@@ -35,14 +36,17 @@ hidden = true
 smart-case = true
 
 [editor.indent-guides]
-render = true
+render = true  
 character = "⸽"
-skip-levels = 1
+skip-levels = 1  
+
+[editor.whitespace]
+
 
 # KEY REMAPPING
 [keys.normal]
-C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "move_line_up"]
-C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "move_line_down"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 C-s = ":w"
 
 [keys.insert]
