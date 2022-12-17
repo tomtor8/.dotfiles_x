@@ -2,6 +2,7 @@
 require('packer').startup({
   function()
     use 'wbthomason/packer.nvim'
+    use 'lewis6991/gitsigns.nvim'
     use 'ellisonleao/gruvbox.nvim'
     use 'sainnhe/gruvbox-material'
     use 'tamton-aquib/staline.nvim'
