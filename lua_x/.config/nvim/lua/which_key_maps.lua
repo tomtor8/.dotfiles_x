@@ -24,12 +24,23 @@ local mappings = {
     q = {"<cmd>q!<cr>", "Quit Buffer"},
     a = {"<cmd>qa!<cr>", "Quit All Buffers"}
   },
-  -- n = {
-  -- name = "Empt", -- optional group name
-  -- --t = { "<cmd>NvimTreeToggle<cr>", "Toggle NvimTree" },
-  -- --f = { "<cmd>set foldenable<cr>", "Fold enable" },
-  -- --u = { "<cmd>set nofoldenable<cr>", "Fold disable" },
-  -- },
+  s = {
+    name = "Surround", -- optional group name
+    a = { "", "ysiw - surr word" },
+    b = { "", "yss - surr line" },
+    c = { "", "ysl - surr letter" },
+    d = { "", "S - in visual mode" },
+    e = { "", "ds - delete surr" },
+    f = { "", "dss - delete any bracket" },
+    g = { "", "dsq - delete quotes" },
+    h = { "", "cs - change surr" },
+    i = { "", "a - angle bracket" },
+    j = { "", "b - parentheses" },
+    k = { "", "B - curly bracket" },
+    l = { "", "r - square bracket" },
+    m = { "", "s - any bracket" },
+    n = { "", "q - any quotes" },
+  },
   t = {
     name = "TERMINAL",
     f = {"<cmd>ToggleTerm direction=float<cr>", "Float Terminal"},
