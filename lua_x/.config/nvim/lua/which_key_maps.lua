@@ -26,10 +26,13 @@ local mappings = {
   },
   s = {
     name = "Surround", -- optional group name
-    a = { "", "ysiw - surr word" },
-    b = { "", "yss - surr line" },
-    c = { "", "ysl - surr letter" },
-    d = { "", "S - in visual mode" },
+    d = { 'viw<esc>a"<esc>bi"<esc>lel', "Word double quote" },
+    s = { "viw<esc>a'<esc>bi'<esc>lel", "Word single quote" },
+    p = { "viw<esc>a)<esc>bi(<esc>lel", "Word parentheses" },
+    a = { "viw<esc>a><esc>bi<<esc>lel", "Word angle brackets" },
+    b = { "viw<esc>a]<esc>bi[<esc>lel", "Word square brackets" },
+    c = { "viw<esc>a}<esc>bi{<esc>lel", "Word curly brackets" },
+    v = { "", "S - in visual mode" },
     e = { "", "ds - delete surr" },
     f = { "", "dss - delete any bracket" },
     g = { "", "dsq - delete quotes" },
