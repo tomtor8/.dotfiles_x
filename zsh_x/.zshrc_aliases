@@ -2,13 +2,8 @@
 alias zshconfig="micro ~/.zshrc"
 alias bashconfig="micro ~/.bashrc"
 
-alias cs="zsh ~/bin/cht.sh"
 alias vim="nvim"
 alias vimconfig="vim ~/.config/lvim/config.lua"
-
-#copy file content to system clipboard
-alias copyfile="xclip -sel clip"
-#alias copypath="pwd | xclip -sel clip"
 
 #LS - EXA aliases
 alias ls="exa --group-directories-first --icons"
@@ -26,8 +21,6 @@ alias weather="curl https://wttr.in/Kosice"
 # buku bookmarks aliases
 alias bukus="buku --deep"
 alias bukut="buku -t"
-alias baktobuku="cat /media/tomas/LILS/macOs_dotfiles_GIT/buku_c/.local/share/buku/bookmarks.db > ~/.local/share/buku/bookmarks.db"
-alias bukutobak="cat ~/.local/share/buku/bookmarks.db > /media/tomas/LILS/macOs_dotfiles_GIT/buku_c/.local/share/buku/bookmarks.db"
 
 # ncdu
 # there are two color options, dark or off
