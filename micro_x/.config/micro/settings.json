@@ -1,6 +1,6 @@
 {
     "basename": true,
-    "colorscheme": "simple",
+    "colorscheme": "atom-dark",
     "savecursor": true,
     "softwrap": true,
     "tabhighlight": true,

@@ -3,7 +3,22 @@ command_timeout = 1000
 [cmd_duration]
 show_milliseconds = false
 min_time = 1000
-format = "⏲ [$duration](bold yellow)"
+format = "  [$duration](bold yellow)"
+
+[username]
+style_user = 'yellow bold'
+style_root = 'red bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[shell]
+bash_indicator = ''
+zsh_indicator = ''
+powershell_indicator = '󰨊'
+unknown_indicator = 'mystery shell'
+style = 'cyan bold'
+disabled = false
 
 [directory]
 read_only = " "
@@ -72,7 +87,7 @@ symbol = "🅢 "
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
-format = "⏲ $time "
+format = " $time "
 
  
 # [nodejs]
