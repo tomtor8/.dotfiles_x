@@ -52,6 +52,7 @@ source ~/.dotfiles_x/nnn_x/nnn.config
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.dotfiles_x/shellfunctions.sh ] && source ~/.dotfiles_x/shellfunctions.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
