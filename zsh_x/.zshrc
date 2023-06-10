@@ -62,7 +62,8 @@ export NVM_DIR="$HOME/.nvm"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+source ~/.zshrc_prompt
 
 source /home/tom/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
